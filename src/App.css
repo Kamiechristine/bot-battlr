@@ -1,0 +1,46 @@
+body {
+  background-color: hsl(175, 100%, 50%); /* Teal background */
+  margin: 0; /* Remove default body margins */
+  font-family: sans-serif; /* Choose a font */
+  color: #333; /* Dark text for better contrast */
+}
+
+.App {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: center; /* Center horizontally */
+  align-items: flex-start; /* Align items to the top */
+  gap: 20px;
+  padding: 20px; /* Add padding around content */
+  width: 90%; /* Occupy most of the screen width */
+  max-width: 1200px; /* Set a maximum width */
+  margin: 0 auto; /* Center the app horizontally */
+}
+
+#bot {
+  /* Remove unnecessary bottom padding and margin */
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 15px; /* Adjust padding */
+  cursor: pointer;
+  background-color: #007bff; /* Example button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .App {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items horizontally */
+    width: 95%;
+  }
+}
